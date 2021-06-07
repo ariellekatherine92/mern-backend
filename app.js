@@ -22,8 +22,8 @@ app.get('/', (req, res) => {
     res.status(200).json({ message: 'Smile, you are being watched by the Backend Engineering Team' });
 });
 
-// Routes
-app.use('/api/users', users);
+// // Routes
+ app.use('/api/users', users);
 
 app.get('/*', (req, res) => {
     res.status(404).json({ message: 'Data not found' });
