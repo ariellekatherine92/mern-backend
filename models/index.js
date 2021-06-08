@@ -21,8 +21,10 @@ db.on('error', (error) => {
 
 //import all of models
 const User = require('./User');
+const Book = require('./Book');
 
 //export all models from this file
 module.exports = {
-    User
+    User,
+    Book,
 }
